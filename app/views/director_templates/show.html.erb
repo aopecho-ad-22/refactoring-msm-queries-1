@@ -89,32 +89,32 @@
   <% films = matching_movies.order({ :year => :asc }) %>
 
   <% films.each do |a_movie| %>
-  <tr>
-    <td>
-      <%= a_movie.id %>
-    </td>
+    <tr>
+      <td>
+        <%= a_movie.id %>
+      </td>
 
-    <td>
-      <img src="<%= a_movie.image %>">
-    </td>
+      <td>
+        <img src="<%= a_movie.image %>">
+      </td>
 
-    <td>
-      <%= a_movie.title %>
-    </td>
+      <td>
+        <%= a_movie.title %>
+      </td>
 
-    <td>
-      <%= a_movie.year %>
-    </td>
+      <td>
+        <%= a_movie.year %>
+      </td>
 
-    <td>
-      <%= @the_director.name %>
-    </td>
+      <td>
+        <%= @the_director.name %>
+      </td>
 
-    <td>
-      <a href="/movies/<%= a_movie.id %>">
-        Show details
-      </a>
-    </td>
-  </tr>
+      <td>
+        <a href="/movies/<%= a_movie.id %>">
+          Show details
+        </a>
+      </td>
+    </tr>
   <% end %>
 </table>
